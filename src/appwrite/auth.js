@@ -15,12 +15,12 @@ export class AuthService {
         try {
             const userAccount = await this.account.create(ID.unique(), email, password, name)
             if (userAccount) {
-return this.login({ email, password })
+                return this.login({ email, password })
             } else {
                 return userAccount
             }
         } catch (error) {
-            throw error
+         console.log("createAccount: ",error)
         }
     }
 
@@ -28,7 +28,7 @@ return this.login({ email, password })
         try {
             return await this.account.createEmailSession(email, password)
         } catch (error) {
-            throw error
+            console.log("login: ",error)
         }
     }
 
@@ -36,18 +36,18 @@ return this.login({ email, password })
         try {
             return await this.account.get()
         } catch (error) {
-            throw error
+           console.log("getCurrentUser: ",error)
         }
         return null;
-    
+
     }
 
 
-    async logout(){
+    async logout() {
         try {
             await this.account.deleteSessions()
         } catch (error) {
-            throw error
+           console.log("logout: ",error)
         }
     }
 

@@ -28,7 +28,7 @@ export class Service {
             )
         }
         catch(error){
-            throw error
+          console.log("createpost: ",error)
         }
 
     }
@@ -49,7 +49,7 @@ export class Service {
             )
         }
         catch(error){
-            throw error
+          console.log("updatepost: ",error)
         }
 
     }
@@ -63,7 +63,7 @@ export class Service {
             )
         }
         catch(error){
-           console.log(error)
+           console.log("deletepost: ",error)
            return false
         }
 
@@ -78,7 +78,7 @@ export class Service {
             )
         }
         catch(error){
-            throw error
+            console.log("getpost: ",error)
         }
 
     }
@@ -91,7 +91,7 @@ export class Service {
                 queries
             )
         } catch (error) {
-            
+            console.log("getposts: ",error)
         }
     }
 
@@ -103,7 +103,7 @@ export class Service {
                 file
             )
         } catch (error) {
-            console.log(error)
+            console.log("upload file: ",error)
             return false
         }
     }
@@ -115,7 +115,7 @@ export class Service {
                 fileId
             )
         } catch (error) {
-            console.log(error)
+            console.log("deletefile: ",error)
             return false
         }
     }
