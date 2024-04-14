@@ -47,8 +47,7 @@ function PostForm({ post }) {
 
             if (file) {
                 const fileId = file.$id;
-                data.featuredimg = fileId; // Change this line
-                // data.userId = userData.$id;
+                data.featuredimg = fileId;
 
                 const dbPost = await service.createPost({
                     ...data,
