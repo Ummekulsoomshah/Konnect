@@ -12,36 +12,36 @@ export default function Footer() {
             </div>
           {/* </Link> */}
           <div class="footer_column">
-            <h3>ONLINE SHOPPING</h3>
+            <h3>Blogging</h3>
 
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-
-          </div>
-
-          <div class="footer_column">
-            <h3>ONLINE SHOPPING</h3>
-
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
+            <a href="#">Men blogs</a>
+            <a href="#">Women blogs</a>
+            <a href="#">Kids blogs</a>
 
           </div>
 
           <div class="footer_column">
-            <h3>ONLINE SHOPPING</h3>
+            <h3>Blogging</h3>
 
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
+            <a href="#">Men blogs</a>
+            <a href="#">Women blogs</a>
+            <a href="#">Kids blogs</a>
+
+          </div>
+
+          <div class="footer_column">
+            <h3>Blogging</h3>
+
+            <a href="#">Men blogs</a>
+            <a href="#">Women blogs</a>
+            <a href="#">Kids blogs</a>
 
           </div>
         </div>
         <hr />
 
         <div class="copyright">
-          © 2023 www.AuraMall.com. All rights reserved.
+          © 2023 www.Konnect.com. All rights reserved.
         </div>
       </footer>
     </div>
