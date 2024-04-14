@@ -40,7 +40,7 @@ function Post() {
 
       {isAuthor && (
         <div className="post-actions">
-          <Link to={`/edit-post/${post.$id}`}>
+          <Link to={`/edit-post/${post.$id}`} style={{textDecoration:"none"}}>
             <Button className="edit-button">Edit</Button>
           </Link>
           <Button className="delete-button" onClick={deletePost}>Delete</Button>

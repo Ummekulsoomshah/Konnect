@@ -32,7 +32,7 @@ function Login() {
       <Logo />
       <h2>Sign in to your account</h2>
       <p>Don't have any account
-        <Link to="/signup">Sign Up</Link></p>
+        <Link to="/signup" style={{textDecoration:"none"}}>Sign Up</Link></p>
       {error && <p>{error}</p>}
       <form onSubmit={handleSubmit(login)}>
         <div className="input-field">

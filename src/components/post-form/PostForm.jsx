@@ -19,6 +19,7 @@ function PostForm({ post }) {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const userData = useSelector((state) => state.auth.userData)
+    console.log("userData: ",userData.$id)
 
 
 

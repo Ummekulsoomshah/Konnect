@@ -3,12 +3,12 @@ import service from '../appwrite/config'
 import { Link } from 'react-router-dom'
 function PostCard({$id,title,featuredimg}) {
   return (
-   <Link to={`/post/${$id}`}>
+   <Link to={`/post/${$id}`} style={{textDecoration:"none"}}>
     <div>
         <div>
         <img src={service.getFilePreview(featuredimg)} alt="" />
         </div>
-        <h2>{title}</h2>
+        <h2 className='poststitle'>{title}</h2>
     </div>
    </Link>
   )

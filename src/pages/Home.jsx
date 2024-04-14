@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import service from '../appwrite/config'
-import { Container, PostCard } from '../components'
+import { Container, PostCard} from '../components'
+import {Home as HomeComponent} from '../components'
+
 function Home() {
     const [posts, setposts] = useState([])
     useEffect(() => {
@@ -22,7 +24,7 @@ function Home() {
     return (
         <div className="post-container">
             <Container>
-                <h1>All Posts</h1>
+              <HomeComponent/>
                 <div className="post-list">
                     {posts.map((post) => (
                         <div key={post.$id} className="post-card">

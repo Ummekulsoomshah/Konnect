@@ -33,7 +33,7 @@ function Signup() {
             <Logo />
             <h2>Sign up to create account</h2>
             <p>Already have an account
-                <Link to="/login">Sign In</Link></p>
+                <Link to="/login" style={{textDecoration:"none"}}>Sign In</Link></p>
             {error && console.log(error)}
 
             <form onSubmit={handleSubmit(create)}>

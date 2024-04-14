@@ -1,95 +1,8 @@
-/***************** Item Page CSS **************************/
-/*.action_container {
-    text-decoration: none;
-}
-a.action_container:link {
-    color:black;
-}
-.item-details {
-    cursor: pointer;
-    width: 250px;
-    margin: 10px;
-}
-.stars {
-    font-size: 12px;
-    font-weight: 700;
-    text-align: left;
-}
-.company {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-    color: #282c3f;
-    margin-bottom: 6px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-top: 20px;
-}
-.item-name {
-    color: #535766;
-    font-size: 16px;
-    line-height: 1;
-    margin-bottom: 0;
-    margin-top: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: 400;
-    display: block;
-}
-.price-container {
-    margin-top: 10px;
-}
-.current-price {
-    font-size: 14px;
-    font-weight: 700;
-    color: #282c3f;
-}
-.original-price {
-    text-decoration: line-through;
-    color: #7e818c;
-    font-weight: 400;
-    margin-left: 5px;
-    font-size: 12px;
-}
-.discount-percentage {
-    color: #ff905a;
-    font-weight: 400;
-    font-size: 12px;
-    margin-left: 5px;
-}
-.btn-bag {
-    background-color: lightgreen;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 10px;
-    width: 100%;
-    margin-top: 7px;
-    font-size: 20px;
-    cursor: pointer;
-}
-.bag-items {
-    background-color: #f16565;
-    white-space: nowrap;
-    text-align: center;
-    line-height: 18px;
-    padding: 0 6px;
-    height: 18px;
-    position: relative;
-    border-radius: 50%;
-    font-size: 12px;
-    color: #fff;
-    left: 13px;
-    top: -44px;
-    font-weight: 700;
-    cursor: pointer;
-}*/
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
     box-sizing: border-box;
 }
 
@@ -562,8 +475,11 @@ a.action_container:link {
 }
 
 header {
-    background-color: rgb(4, 82, 65);
+    background-color: rgb(9, 133, 106);
     height: 80px;
+    margin-bottom: 30px;
+    /* box shadow for only bottom box-shadow: */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -586,13 +502,17 @@ header {
 }
 
 .mainbtns button {
-    border: 2px solid rgb(10, 20, 18);
-    background-color: rgb(4, 82, 65);
+    border:none;
+    background-color:rgb(9, 133, 106);
 
     padding: 5px 10px;
     font-size: 20px;
     cursor: pointer;
     margin: 3px;
+    color: white;
+}
+.mainbtns button:hover {
+    color:rgb(216, 22, 22);
 }
 
 .model {
@@ -636,7 +556,7 @@ header {
   }
   
   .innermodel p a {
-    color: #007bff;
+    color:rgb(9, 133, 106);
     text-decoration: none;
   }
   
@@ -666,21 +586,21 @@ header {
   }
   
   .innermodel form .input-field input:focus {
-    border-color: #007bff;
+    border-color: rgb(9, 133, 106);
     outline: none;
   }
   
   .innermodel form .submit-btn {
     padding: 10px 20px;
     color: #fff;
-    background-color: #558ecf;
+    background-color: rgb(9, 133, 106);
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
    .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: rgb(9, 133, 106);
   }
   /* PostForm.css */
 .post-form {
@@ -713,21 +633,21 @@ header {
   
   .post-form input:focus,
   .post-form select:focus {
-    border-color: #007bff;
+    border-color: rgb(9, 133, 106);
     outline: none;
   }
   
   .post-form button {
     padding: 0.5rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: rgb(9, 133, 106);
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .post-form button:hover {
-    background-color: #0056b3;
+    background-color:rgb(9, 133, 106);
   }
   
   .post-form img {
@@ -748,11 +668,16 @@ header {
     background-color: #f5f5f5;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    align-items: center;
   }
-  
+  .post-container h1{
+    color:rgb(9, 133, 106);
+  }
   .post-title {
     font-size: 2em;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
   }
   
@@ -769,7 +694,8 @@ header {
     padding: 20px;
   }
   .post-card img {
-    width: 100%;
+    width: 300px;
+    height: 200px;
     height: auto;
     display: block;
     margin-bottom: 1rem;
@@ -793,8 +719,10 @@ header {
   
   .post-title {
     font-size: 2em;
-    color: #333;
+    color: rgb(9, 133, 106);
+
     margin-bottom: 10px;
+    align-items: center;
   }
   
   .post-image {
@@ -815,7 +743,7 @@ header {
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
-    background-color: #007bff;
+    background-color: rgb(9, 133, 106);
     color: #fff;
     cursor: pointer;
     
@@ -829,5 +757,46 @@ header {
   
   .post-text {
     font-size: 1em;
+    color: black;
+  }
+.poststitle{
+    background-color:rgb(9, 133, 106) ;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    margin-bottom: 20px;
+  }
+  
+  .hero-title {
+    font-size: 2em;
     color: #333;
+  }
+  
+  .hero-description {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .grid-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid orange; /* This makes the images circular */
   }

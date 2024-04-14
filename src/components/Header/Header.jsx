@@ -45,7 +45,7 @@ export default function Header() {
           <div className='mainbtns' >
             {navItems.map((item) => item.active ? (
               <div key={item.name}>
-                <Link to={item.slug}>
+                <Link to={item.slug} style={{textDecoration:"none"}}>
                 <button >
                   {item.name}
                 </button>
