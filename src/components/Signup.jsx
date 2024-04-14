@@ -12,25 +12,29 @@ function Signup() {
     const navigate = useNavigate()
 
     const create = async (data) => {
-        setError("")
+        setError("");
         try {
-            const userData = await authService.createAccount(data)
-            if (userData) {
-                const userData = await authService.getCurrentUser()
-                if (userData) dispatch(login(userData))
-                navigate("/")
+          const userData = await authService.createAccount(data);
+          if (userData) {
+            console.log(userData, "collected");
+            const userData2 = await authService.getCurrentUser();
+            if (userData2) {
+              console.log("second data: ", userData2);
+              dispatch(login(userData2));
             }
+            navigate("/");
+          }
         } catch (error) {
-            setError(error.message)
+          setError(error.message);
         }
-    }
+      };
     return (
         <div className="innermodel">
             <Logo />
             <h2>Sign up to create account</h2>
             <p>Already have an account
                 <Link to="/login">Sign In</Link></p>
-            {error && <p>{error}</p>}
+            {error && console.log(error)}
 
             <form onSubmit={handleSubmit(create)}>
                 <div className="input-field">

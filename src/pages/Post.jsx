@@ -26,33 +26,33 @@ function Post() {
     const deletePost = () => {
         service.deletePost(post.$id).then((status) => {
             if (status) {
-                service.deleteFile(post.featuredImage)
+                service.deleteFile(post.featuredimg)
                 navigate('/')
             }
         })
     }
     return post ? (
-        <div>
-            <Container>
-                <div>
-                    <h1>{post.title}</h1>
-                    <img src={service.getFilePreview(post.featuredImage)} alt={post.title} />
+        <div className="post-page">
+  <Container>
+    <div className="post-header">
+      <h1 className="post-title">{post.title}</h1>
+      <img className="post-image" src={service.getFilePreview(post.featuredimg)} alt={post.title} />
 
-                    {isAuthor && (
-                        <div>
-                            <Link to={`/edit-post/${post.$id}`}>
-                                <Button>Edit</Button>
-                            </Link>
-                            <Button onClick={deletePost}>Delete</Button>
-                        </div>
-                    )}
-                </div>
-                <div>
-                    <h1>{post.title}</h1>
-                    <div>{parse(post.content)}</div>
-                </div>
-            </Container>
+      {isAuthor && (
+        <div className="post-actions">
+          <Link to={`/edit-post/${post.$id}`}>
+            <Button className="edit-button">Edit</Button>
+          </Link>
+          <Button className="delete-button" onClick={deletePost}>Delete</Button>
         </div>
+      )}
+    </div>
+    <div className="post-content">
+      <h1 className="post-title">{post.title}</h1>
+      <div className="post-text">{parse(post.content)}</div>
+    </div>
+  </Container>
+</div>
     ) : null
 }
 

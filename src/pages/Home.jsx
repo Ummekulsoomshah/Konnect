@@ -20,12 +20,12 @@ function Home() {
         )
     }
     return (
-        <div>
+        <div className="post-container">
             <Container>
                 <h1>All Posts</h1>
-                <div>
+                <div className="post-list">
                     {posts.map((post) => (
-                        <div key={post.$id}>
+                        <div key={post.$id} className="post-card">
                             <PostCard {...post} />
                         </div>
                     ))}
